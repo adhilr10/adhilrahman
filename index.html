@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>
+        Hello, I Am Adhil Rahman A Web Designer. This Is My Portfolio Site
+    </title>
+    <meta name="description"
+        content="I'm Tony Batts, not Anthony Batts the former Police Commissioner (I'm way cooler) I am a Web Designer focused on Responsive Web Design." />
+    <meta name="keywords"
+        content="Anthony Batts, Tony Batts, HTML, CSS, JavaScript, Portfolio, graphic design, web design, website builder, web developer, web designer, webdesign, website creator, responsive web design" />
+    <meta name="author" content="Tony Batts" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta property="og:image" content="images/ogimage.png" />
+    <meta property="og:title" content="Hello, I Am Tony Batts A Web Designer. This Is My Portfolio Site" />
+    <meta property="og:description"
+        content="My portfolio is built with plain HTML, CSS, and JavsScript. Fully responsive and interactive this site is a work in progress" />
+    <meta property="og:type" content="website" />
+    <link rel="preload" href="style.css" as="style" />
+    <link rel="preload" href="main.js" as="script" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preload" href="style.css" as="style" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/pwa/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/pwa/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/pwa/favicon-16x16.png" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#1B242F" />
+    <meta name="apple-mobile-web-app-title" content="Tony Batts" />
+    <meta name="application-name" content="Tony Batts" />
+    <meta name="msapplication-TileColor" content="#000000" />
+
+    <meta name="theme-color" content="#1B242F" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- iPhone Xs Max (1242px x 2688px) -->
+    <link rel="apple-touch-startup-image"
+        media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)"
+        href="/pwa/apple-launch-1242x2688.png" />
+    <!-- iPhone Xr (828px x 1792px) -->
+    <link rel="apple-touch-startup-image"
+        media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)"
+        href="/pwa/apple-launch-828x1792.png" />
+    <!-- iPhone X, Xs (1125px x 2436px) -->
+    <link rel="apple-touch-startup-image"
+        media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)"
+        href="/pwa/apple-launch-1125x2436.png" />
+    <!-- iPhone 8 Plus, 7 Plus, 6s Plus, 6 Plus (1242px x 2208px) -->
+    <link rel="apple-touch-startup-image"
+        media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3)"
+        href="/pwa/apple-launch-1242x2208.png" />
+    <!-- iPhone 8, 7, 6s, 6 (750px x 1334px) -->
+    <link rel="apple-touch-startup-image"
+        media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)"
+        href="/pwa/apple-launch-750x1334.png" />
+    <!-- iPad Pro 12.9" (2048px x 2732px) -->
+    <link rel="apple-touch-startup-image"
+        media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)"
+        href="/pwa/apple-launch-2048x2732.png" />
+    <!-- iPad Pro 10.5" (1668px x 2224px) -->
+    <link rel="apple-touch-startup-image"
+        media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)"
+        href="/pwa/apple-launch-1668x2224.png" />
+    <!-- iPad Mini, Air (1536px x 2048px) -->
+    <link rel="apple-touch-startup-image"
+        media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)"
+        href="/pwa/apple-launch-1536x2048.png" />
+    <link rel="preload" href="particles.min.js" as="script" />
+    <script defer src="particles.min.js"></script>
+    <script defer src="main.js"></script>
+    <script src="sw.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="canonical" href="https://www.tonybatts.com/" />
+</head>
+
+<body>
+
+    <div class="heroimage" id="home">
+        <div id="particles-js">
+            <div class="textcenter box one">
+                <div class="myimage">
+                    <img class="tony-image" src="images/my-pic-preview.png" alt="Tony Batts" />
+                    <h1>
+                        <span id="first-title">Hello, I'm </span><span id="tony">Adhil Rahman.</span>
+                    </h1>
+                    <h1 id="second-title">I'm a web developer</h1>
+                    <a href="#scroll" aria-label="Scroll to about section">
+                        <div class="downarrow">
+                            <span class="icon-keyboard_arrow_up bounce"></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainwrapper">
+        <!-- DROPDOWN NAV -->
+        <nav class="scrollsticky" id="scroll">
+            <div id="activeButton">
+                <div class="topnav" id="myTopnav">
+                    <span class="icon-buymeacoffee logo2"></span>
+                    <img src="images/akatsuki-2.webp" alt="akatsuki symbol" class="akatsuki" />
+                    <p id="guesses"></p>
+                    <a class="buymeacoffeelink" href="https://www.buymeacoffee.com/tonybatts" target="_blank"
+                        rel="noopener"></a>
+                    <div class="mobile-drop-flex">
+                        <a id="home-nav" href="#home" class="btns mobilenone active">HOME</a>
+                        <a id="about-nav" href="#about" class="btns">ABOUT</a>
+                        <a id="skills-nav" href="#skills" class="btns">SKILLS</a>
+                        <a id="projects-nav" href="#projects" class="btns">PROJECTS</a>
+                        <a id="contact-nav" href="#contact" class="btns">CONTACT</a>
+                    </div>
+                    <p id="puzzle"></p>
+                    <span class="icon hamburger" role="navigation">
+                        <span id="nav-icon1">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </nav>
+        <!-- ABOUT SECTION -->
+        <div class="headings headingsabout" id="about">
+            <h2>ABOUT</h2>
+        </div>
+        <section class="flex-container">
+            <div class="card bluecard item" onclick="">
+                <div class="icon" id="coffee">
+                    <span class="icon-book"></span>
+                    <h3>My Story</h3>
+                </div>
+                <p>
+                    My journey into the world of web development started with an insatiable curiosity and a knack for
+                    problem-solving. From my very first encounter with Django, I was hooked by its power to create
+                    robust and dynamic web applications. Since then, I've been on a mission to refine my skills and push
+                    my boundaries every single day.
+                </p>
+            </div>
+            <div class="card pinkcard item" onclick="">
+                <div class="icon">
+                    <span class="icon-coffeescript"></span>
+                    <h3>Always Learning</h3>
+                </div>
+                <p id="pcard">
+                    The world of technology waits for no one. To stay relevant and deliver top-notch solutions, I firmly
+                    believe in the principle of "always improving." I embrace every opportunity to learn, whether it's
+                    diving into the latest web development trends, mastering new programming languages, or exploring
+                    innovative design principles.
+                </p>
+            </div>
+            <div class="card pinkcard item" onclick="">
+                <div class="icon">
+                    <span class="icon-code"></span>
+                    <h3>Embracing Challenges</h3>
+                </div>
+                <p>
+                    I thrive in the face of challenges. Whether it's adapting to a new technology, untangling a
+                    particularly tricky bug, or optimizing performance for high traffic, I see each challenge as an
+                    opportunity to stretch my skills and enhance my capabilities.
+                </p>
+            </div>
+            <div class="card bluecard item" onclick="">
+                <div class="icon">
+                    <span class="icon-code"></span>
+                    <h3>Building for the Future</h3>
+                </div>
+                <p>
+                    Once I get into something, I REALLY get into it. If you're looking at this site at 2 am don't be
+                    surprised if you see a change mid scroll. I probably just had an "Ah ha!" moment and hopped out of
+                    bed to make a quick adjustment. Often times I dream about
+                    fixing bugs, still not sure if this is a good or bad thing.
+                </p>
+            </div>
+        </section>
+        <!-- </div> -->
+
+        <!-- SKILLS SECTION -->
+        <div class="wrapper2" id="skills">
+            <div class="headings">
+                <h2>SKILLS</h2>
+            </div>
+            <section class="flex-container2">
+                <div>
+                    <div class="icon1">
+                        <span class="icon-html5 spancss"></span>
+                        <h3>HTML</h3>
+                    </div>
+                </div>
+                <div>
+                    <div class="icon1">
+                        <span class="icon-css3 spancss"></span>
+                        <h3>CSS</h3>
+                    </div>
+                </div>
+                <div>
+                    <div class="icon1">
+                        <span class="icon-javascript spancss"></span>
+                        <h3>JavaScript</h3>
+                    </div>
+                </div>
+                <div>
+                    <div class="icon1">
+                        <span class="icon-bootstrap spancss"></span>
+                        <h3>Bootstrap</h3>
+                    </div>
+                </div>
+                <div>
+                    <div class="icon1">
+                        <span class="icon-git spancss"></span>
+                        <h3>Git</h3>
+                    </div>
+                </div>
+                <div>
+                    <div class="icon1">
+                        <img class="icon-image" style="width: 140px;" src="./images/py.png" alt="">
+                        <h3>Python</h3>
+                    </div>
+                </div>
+                <div>
+                    <div class="icon1">
+                        <img class="icon-image" style="width: 120px;" src="./images/c.png" alt="">
+                        <h3>C</h3>
+                    </div>
+                </div>
+                <div>
+                    <div class="icon1">
+                        <span class="icon-react spancss"></span>
+                        <h3>React</h3>
+                    </div>
+                </div>
+                <div>
+                    <div class="icon1">
+                        <span class="icon-npm spancss"></span>
+                        <h3>npm</h3>
+                    </div>
+                </div>
+                <div>
+                    <div class="icon1">
+                        <img class="icon-image" style="width: 150px;" src="./images/nodejs-1-logo.png" alt="">
+                        <h3>Node</h3>
+                    </div>
+                </div>
+                <div>
+                    <div class="icon1">
+                        <img class="icon-image" style="width: 120px;" src="./images/java.png" alt="">
+                        <h3>Java</h3>
+                    </div>
+                </div>
+                <div>
+                    <div class="icon1">
+                        <img class="icon-image" style="width: 120px;" src="./images/hbs.jpeg" alt="">
+                        <h3>HBS</h3>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- PROJECTS -->
+        <div class="headings headingsabout" id="projects">
+            <h2>PROJECTS</h2>
+        </div>
+        <section class="project-container">
+            <div class="cardflex">
+                <div class="card-container item">
+                    <div class="card1">
+                        <div class="card-faces back">
+                            <div class="easter-egg-title">
+                                <h3 class="back-title">Asayn</h3>
+                            </div>
+                            <div class="easter-egg-list">
+                                <div class="easterwrapper">
+                                    <img src="./images/asayn.jpg" alt="" width="500px">
+                                </div>
+                            </div>
+                            <div class="blue-bar"></div>
+                        </div>
+                        <div class="card-faces front">
+                            <h3 class="front-title">Asayn</h3>
+                            <p class="cardp">
+                                I've collaborated on an innovative EdTech platform, leveraging React.js, Bootstrap,
+                                Node.js, and CSS. This dynamic project, a result of effective teamwork, showcases my
+                                prowess in combining technologies for impactful web application development. Excitedly
+                                contributing to the educational landscape, our platform promises an engaging and
+                                enriching experience for learners.
+                            </p>
+                            <div class="handicon">
+                                <span class="icon-hand-pointer-o"></span>
+                            </div>
+                            <div class="red-bar"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container item">
+                    <div class="card1">
+                        <div class="card-faces back">
+
+                            <div class="projectbutton">
+                                <h3 class="front-title">Showrt</h3>
+                                <img src="./images/showrt.jpg" width="500px" alt="">
+                            </div>
+                            <div class="blue-bar"></div>
+                        </div>
+                        <div class="card-faces front">
+                            <h3 class="front-title">Showrt</h3>
+                            <p class="cardp">
+                                my team developed a hyperlocal marketplace app using React Native. Seamlessly merging
+                                skills, we created an app that bridges local buyers and sellers, showcasing my
+                                proficiency in app development and collaborative teamwork. Our project enables efficient
+                                local commerce within a user-friendly digital space.
+                            </p>
+                            <div class="handicon">
+                                <span class="icon-hand-pointer-o"></span>
+                            </div>
+                            <div class="red-bar"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container item">
+                    <div class="card1">
+                        <div class="card-faces back">
+                            <img src="images/messi.png" width="500px" height="300px" alt="">
+                            <div class="projectbutton">
+                                <a href="https://storymaps.com/" target="_blank" rel="noopener"
+                                    class="button2">Messi.com</a>
+                            </div>
+                            <div class="blue-bar"></div>
+                        </div>
+                        <div class="card-faces front">
+                            <h3 class="front-title">Messi.com</h3>
+                            <p class="cardp">
+                                I've crafted Messi.com using HTML, CSS, Bootstrap, and responsive media queries. This
+                                project showcases my web development skills, utilizing Bootstrap's framework for a
+                                visually appealing and responsive design. Messi.com reflects my dedication to delivering
+                                engaging and adaptive web experiences across devices.
+                            </p>
+                            <div class="handicon">
+                                <span class="icon-hand-pointer-o"></span>
+                            </div>
+                            <div class="red-bar"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container item">
+                    <div class="card1">
+                        <div class="card-faces back">
+                            <img src="./images/apple.png" width="500px" height="300px" alt="">
+                            <div class="projectbutton">
+                                <a href="https://adhilr10.github.io/Apple-Vision-Pro-clone/" target="_blank"
+                                    rel="noopener" class="button2">View Live Site</a>
+                            </div>
+                            <div class="blue-bar"></div>
+                        </div>
+                        <div class="card-faces front">
+                            <h3 class="front-title">Apple Vision pro</h3>
+                            <p class="cardp">
+                                I've skillfully developed the Apple Vision Pro website using HTML and CSS. This project
+                                highlights my ability to create engaging web interfaces while adhering to modern design
+                                standards. Through a clean and visually appealing layout, the website effectively
+                                presents Apple Vision Pro's offerings and showcases my commitment to front-end
+                                excellence
+                            </p>
+                            <div class="handicon">
+                                <span class="icon-hand-pointer-o"></span>
+                            </div>
+                            <div class="red-bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLERY -->
+        <div class="servise" id="gallery">
+            <h2>SERVICE</h2>
+            <div class="service">
+                <div class="ser">
+                    <video class="serskill" muted loop src="./images/mob-dev.gif.mp4" width="350px" height=""></video>
+                    <span>App Develepment</span>
+                </div>
+                <div class="ser">
+                    <video class="serskill1" autoplay muted loop src="./images/web.gif.mp4" width="315px"
+                        height=""></video>
+                    <span>Web Develepment</span>
+                </div>
+            </div>
+
+            <div id="mobilecolor">
+                <div class="header" id="buttonActive">
+                    <button style="display: none;" id="galleryButtonOne" class="btn active2"></button>
+                    <button style="display: none;" id="galleryButtonTwo" class="btn"></button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- CONTACT -->
+    <div class="wrapper3" id="contact">
+        <div class="contactheading">
+            <h2>CONTACT</h2>
+        </div>
+        <div id="contactinfo">
+            <p>Enough about me, tell me about yourself</p>
+        </div>
+    </div>
+    <div class="containerform" id="contact-form">
+        <form id="submit-form" action="">
+            <label for="Name">Name</label>
+            <div class="formpadding">
+                <input class="form-input" type="text" name="Name" id="Name" required
+                    onkeydown="return /[a-zA-Z]/i.test(event.key)" />
+                <span class="bottom"></span>
+                <span class="right"></span>
+                <span class="top"></span>
+                <span class="left"></span>
+            </div>
+            <small class="requirements validation">Don't be shy! What's your name?</small>
+
+            <label for="email">Email</label>
+            <div class="formpadding">
+                <input class="form-input" type="email" name="Email" id="email" required />
+
+                <span class="bottom"></span>
+                <span class="right"></span>
+                <span class="top"></span>
+                <span class="left"></span>
+            </div>
+            <small class="requirements validation">Please leave a valid email</small>
+
+            <label for="message">Your Message</label>
+            <div class="formpadding">
+                <textarea class="form-input" name="Message" id="message" required
+                    style="margin-bottom: -6px"></textarea>
+
+                <span class="bottom"></span>
+                <span class="right"></span>
+                <span class="top"></span>
+                <span class="left"></span>
+            </div>
+            <small class="requirements validation">Leave me a message</small>
+            <input class="form-input" type="submit" value="SUBMIT" />
+            <span class="error" style="text-align: center">Form submission failed, try again later</span>
+            <span class="success" style="text-align: center">Thank you for reaching out!</span>
+        </form>
+    </div>
+    <!-- <img class="naruto lazy" src="images/naruto.GIF" data-src="images/naruto.GIF" data-srcset="images/naruto.GIF" alt="Naruto Easter Egg" aria-hidden="true"> -->
+
+    <!-- FOOTER -->
+
+    <footer>
+        <a href="#home" aria-label="Home section">
+            <div class="backtotop">
+                <span class="icon-keyboard_arrow_up"></span>
+            </div>
+        </a>
+        <div class="media">
+            <a href="https://github.com/adhilr10" aria-label="Github"><span class="icon-git-square"></span></a>
+            <a href="https://www.linkedin.com/in/adhilrahman" aria-label="Linkedin" target="_blank" rel="noopener"><span
+                    class="icon-linkedin-square"></span></a>
+            <a href="https://www.instagram.com/adhil.r10/" aria-label="Instagram" target="_blank" rel="noopener"><span
+                    class="icon-instagram1"></span></a>
+            <a href="mailto:amazementtech521@gmail.com" aria-label="gmail"><span class="icon-envelope"></span></a>
+        </div>
+        <p id="smalltext">
+            <span id="myName">Adhil Rahman</span><span id="year"> &copy;2023-2024</span>
+        </p>
+    </footer>
+
+    <span id="reload">
+        <div id="notification">
+            A new version of this app is available.
+            <span id="toast">Click here</span> to update.
+        </div>
+    </span>
+    </div>
+    <script>
+        $("#submit-form").submit((e) => {
+            e.preventDefault()
+            $.ajax({
+                url: "https://script.google.com/macros/s/AKfycbxJhPVQZWe3v6MhA0YochBEm8Q9_x-SbwB0Boo9SW9bblsZPE_9Ww4JarQW4XI1HRw/exec",
+                data: $("#submit-form").serialize(),
+                method: "post",
+                success: function (response) {
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error: function (err) {
+                    alert("Form submitted successfully")
+
+                }
+            })
+        })
+    </script>
+
+    <!-- LOAD SERVICE WORKER  -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script>
+        if (!navigator.serviceWorker.controller) {
+            navigator.serviceWorker.register("/sw.js").then(function (reg) {
+                console.log(
+                    "Service worker has been registered for scope: " + reg.scope
+                );
+            });
+        }
+
+        let refreshing;
+        // The event listener that is fired when the service worker updates
+        // Here we reload the page
+        navigator.serviceWorker.addEventListener("controllerchange", function () {
+            if (refreshing) return;
+            window.location.reload();
+            refreshing = true;
+        });
+
+        let newWorker;
+
+        // The click event on the notification
+        document.getElementById("reload").addEventListener("click", function () {
+            newWorker.postMessage({
+                action: "skipWaiting"
+            });
+        });
+
+        if ("serviceWorker" in navigator) {
+            // Register the service worker
+            navigator.serviceWorker.register("/sw.js").then((reg) => {
+                reg.addEventListener("updatefound", () => {
+                    // An updated service worker has appeared in reg.installing!
+                    newWorker = reg.installing;
+
+                    newWorker.addEventListener("statechange", () => {
+                        // Has service worker state changed?
+                        switch (newWorker.state) {
+                            case "installed":
+                                // There is a new service worker available, show the notification
+                                if (navigator.serviceWorker.controller) {
+                                    let notification = document.querySelector("#notification");
+                                    notification.className = "show";
+                                }
+
+                                break;
+                        }
+                    });
+                });
+            });
+        }
+    </script>
+
+</body>
+</html>
